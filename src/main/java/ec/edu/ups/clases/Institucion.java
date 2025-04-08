@@ -1,5 +1,7 @@
 package ec.edu.ups.clases;
 
+import ec.edu.ups.enums.TipoDireccion;
+
 import java.util.List;
 
 public class Institucion {
@@ -12,9 +14,8 @@ public class Institucion {
     public Institucion() {
     }
 
-    public Institucion(List<Asignacion> asignaciones, Direccion direccion, List<String> sedes, String nombre, int id) {
+    public Institucion(List<Asignacion> asignaciones, List<String> sedes, String nombre, int id) {
         this.asignaciones = asignaciones;
-        this.direccion = direccion;
         this.sedes = sedes;
         this.nombre = nombre;
         this.id = id;
@@ -48,8 +49,8 @@ public class Institucion {
         return direccion;
     }
 
-    public void setDireccion(Direccion direccion) {
-        this.direccion = direccion;
+    public void addDireccion(TipoDireccion tipoDireccion, String tipo, String callePricipal, String calleSecundaria, String numeracion, String ciudad, String provincia, String pais) {
+        this.direccion = new Direccion(tipoDireccion,tipo,callePricipal,calleSecundaria,numeracion,ciudad,provincia,pais);
     }
 
     public List<Asignacion> getAsignaciones() {
