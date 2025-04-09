@@ -6,7 +6,7 @@ public class Administrativo extends Persona {
     private List<String> cargos;
     private List<String> responsabilidades;
 
-    public Administrativo(String cedula, String nombre, String apellido, String telefono, String correoElectronico) {
+    public Administrativo(String number, String cedula, String nombre, String apellido, String telefono, String correoElectronico) {
         super(cedula, nombre, apellido, telefono, correoElectronico);
     }
 
