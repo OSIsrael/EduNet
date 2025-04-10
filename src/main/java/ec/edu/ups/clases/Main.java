@@ -26,19 +26,20 @@ public class Main {
         institucion2.addDireccion(TipoDireccion.INSTITUCION, "EDIFICIO", "Gral. Francisco Robles", "Otra calle", "107", "Guayaquil", "Guayas", "Ecuador");
 
         // PERSONAS
+        //ESTUDIANTE
         Estudiante estudiante = new Estudiante("0107551566", "Israel", "Orellana", "0999314920", "iorellanas1@est.ups.edu.ec", "Computación");
         estudiante.addDireccion(new Direccion(TipoDireccion.CASA, "Casa", "Huancavilcas", "Colorados", "1-23", "Cuenca", "Azuay", "Ecuador"));
-
+        //DOCENTE
         Docente docente = new Docente("0605040302", "Juan", "Perez", "0987654320", "juan@edu.com",
                 List.of("Licenciatura en Matemáticas", "Maestría en Educación"),
                 List.of("Matemáticas", "Estadística"));
         docente.addDireccion(new Direccion(TipoDireccion.TRABAJO, "Oficina", "Av. C", "Calle D", "202", "Quito", "Pichincha", "Ecuador"));
-
+        // ADMINISTRATIVO
         Administrativo administrativo = new Administrativo("1111222233", "Einar", "Kaalhus", "0777777777", "larss@ups.edu.ec",
                 List.of("Reporte Mensual", "Ajuste de cuentas"),
                 List.of("Director de carrera de Computación", "Rector de Posgrados"));
         administrativo.addDireccion(new Direccion(TipoDireccion.TRABAJO, "Oficina", "Av. Sucre", "Calle Larga", "303", "Cuenca", "Azuay", "Ecuador"));
-
+        // VISITANTE
         Visitante visitante = new Visitante("010100101001", "Fernando", "Martínez", "09123453213232", "fer@gmail.com", "Pedir información",
                 new GregorianCalendar(2025, Calendar.APRIL, 9),
                 new GregorianCalendar(2025, Calendar.AUGUST, 3));

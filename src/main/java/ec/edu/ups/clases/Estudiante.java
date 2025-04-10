@@ -22,8 +22,8 @@ public class Estudiante extends Persona {
 
     @Override
     public String toString() {
-        return "Estudiante{" +
-                "carrera='" + carrera + '\'' +
+        return super.toString()+"\n\tEstudiante{" +
+                "\n\tcarrera='" + carrera + '\'' +
                 '}';
     }
 }

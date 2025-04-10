@@ -8,6 +8,7 @@ public class Administrativo extends Persona {
 
     public Administrativo(String number, String cedula, String nombre, String apellido, String telefono, String correoElectronico) {
         super(cedula, nombre, apellido, telefono, correoElectronico);
+
     }
 
     public Administrativo(String cedula, String nombre, String apellido, String telefono, String correoElectronico, List<String> responsabilidades, List<String> cargos) {
@@ -34,9 +35,9 @@ public class Administrativo extends Persona {
 
     @Override
     public String toString() {
-        return "Administrativo{" +
-                "cargos=" + cargos +
-                ", responsabilidades=" + responsabilidades +
+        return super.toString()+"\n\tAdministrativo{" +
+                "\n\tcargos=" + cargos +
+                "\n\t, responsabilidades=" + responsabilidades +
                 '}';
     }
 }

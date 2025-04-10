@@ -44,10 +44,10 @@ public class Asignacion {
 
     @Override
     public String toString() {
-        return "Asignacion{" +
-                "persona=" + persona +
-                ", fechaInicio=" + fechaInicio +
-                ", rol=" + rol +
+        return "\n\tAsignacion{" +
+                "\n\tpersona=" + persona +
+                "\n\t, fechaInicio=" + fechaInicio +
+                "\n\t, rol=" + rol +
                 '}';
     }
 }

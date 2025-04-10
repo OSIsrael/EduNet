@@ -89,15 +89,15 @@ public class Direccion {
 
     @Override
     public String toString() {
-        return "Direccion{" +
-                "tipoDireccion=" + tipoDireccion +
-                ", tipo='" + tipo + '\'' +
-                ", callePricipal='" + callePricipal + '\'' +
-                ", calleSecundaria='" + calleSecundaria + '\'' +
-                ", numeracion='" + numeracion + '\'' +
-                ", ciudad='" + ciudad + '\'' +
-                ", provincia='" + provincia + '\'' +
-                ", pais='" + pais + '\'' +
+        return "\n\tDireccion{" +
+                "\n\tipoDireccion=" + tipoDireccion +
+                "\n\t, tipo='" + tipo + '\'' +
+                "\n\t, callePricipal='" + callePricipal + '\'' +
+                "\n\t, calleSecundaria='" + calleSecundaria + '\'' +
+                "\n\t, numeracion='" + numeracion + '\'' +
+                "\n\t, ciudad='" + ciudad + '\'' +
+                "\n\t, provincia='" + provincia + '\'' +
+                "\n\t, pais='" + pais + '\'' +
                 '}';
     }
 }
